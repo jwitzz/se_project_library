@@ -19,7 +19,6 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
@@ -30,11 +29,10 @@
 
 .nav__links {
   margin: 8px 0 0;
-  list-style: none;
+  list-style-type: none;
   display: flex;
   column-gap: 20px;
   padding: 0;
-  align-items: center;
 }
 
 .nav__link {
@@ -242,13 +240,28 @@
   margin: 0;
 }
 
-/* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
+.staff__picks {
+  max-width: 760px;
+  padding-top: 68px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 40px;
+  column-gap: 40px;
+  margin: 68px auto;
+}
 
 .card {
   background-color: #fff;
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
+  max-width: 760px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 420px;
+  height: 360px;
+  padding-top: 68px;
 }
 
 .card__content {
@@ -272,10 +285,11 @@
 }
 
 .card__footer {
-  margin: 0;
+  margin-top: auto;
   font-size: 14px;
   line-height: 20px;
   color: #838383;
+  list-style-type: none;
 }
 
 .membership {
@@ -296,11 +310,16 @@
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
-  /* Add styles */
+  row-gap: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-basis: 220;
 }
 
 .step {
-  /* Add styles */
+  row-gap: 40px;
+  width: 220px;
 }
 
 .step__title {
@@ -335,6 +354,8 @@
   line-height: 30px;
   font-weight: 500;
   z-index: 1;
+  max-width: 154px;
+  row-gap: 120px;
 }
 
 .about__content {
@@ -346,6 +367,7 @@
 
 .about__paragraph {
   margin: 0 0 32px;
+  column-gap: 32px;
 }
 
 .about__circle {
@@ -353,6 +375,9 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  position: absolute;
+  top: -121px;
+  left: -91px;
 }
 
 .footer {
