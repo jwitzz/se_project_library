@@ -223,6 +223,7 @@
 
 .staff {
   padding: 100px 0 140px;
+  background-image: url(../images/staff_picks_background.jpg);
 }
 
 .staff__title {
@@ -230,6 +231,7 @@
   font-size: 44px;
   line-height: 52px;
   margin: 0 0 24px;
+  color: white;
 }
 
 .staff__subtitle {
@@ -238,17 +240,27 @@
   line-height: 30px;
   font-weight: 400;
   margin: 0;
+  color: white;
+}
+
+.staff__cards {
+  display: flex;
+  max-width: 760px;
+  padding-top: 68px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 50px;
 }
 
 .staff__picks {
   max-width: 760px;
-  padding-top: 68px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  padding-left: 0px;
+  margin: 68px auto 0;
   row-gap: 40px;
-  column-gap: 40px;
-  margin: 68px auto;
 }
 
 .card {
@@ -257,18 +269,16 @@
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
   max-width: 760px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 420px;
-  height: 360px;
+  width: 360;
+  height: 420px;
   padding-top: 68px;
+  row-gap: 40px;
 }
 
 .card__content {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  margin-top: auto;
 }
 
 .card__title {
@@ -289,7 +299,6 @@
   font-size: 14px;
   line-height: 20px;
   color: #838383;
-  list-style-type: none;
 }
 
 .membership {
@@ -346,6 +355,7 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  display: flex;
 }
 
 .about__title {
@@ -356,6 +366,10 @@
   z-index: 1;
   max-width: 154px;
   row-gap: 120px;
+  z-index: 1;
+  order: 1;
+  position: relative;
+  padding-right: 120px;
 }
 
 .about__content {
@@ -363,11 +377,18 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  z-index: 1;
+  order: 2;
 }
 
 .about__paragraph {
+  display: flex;
+  justify-content: center;
   margin: 0 0 32px;
   column-gap: 32px;
+  z-index: 1;
+  position: relative;
+  flex-direction: column;
 }
 
 .about__circle {
@@ -378,6 +399,7 @@
   position: absolute;
   top: -121px;
   left: -91px;
+  z-index: 0;
 }
 
 .footer {
