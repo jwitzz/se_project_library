@@ -4,7 +4,7 @@
   font-size: 16px;
   line-height: 20px;
   margin: 0 auto;
-  font-family: Helvetica Neue, Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .header {
@@ -431,6 +431,10 @@
   flex-direction: column;
 }
 
+.footer__column_content_hours::after {
+  margin-bottom: 0px;
+}
+
 .footer__column_content_social {
   display: flex;
   margin-left: 100px;
@@ -444,17 +448,19 @@
 }
 
 .footer__list {
-  /* The code below removes the default browser styles for lists */
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 .footer__list-item {
-  color: #fff;
   margin-bottom: 16px;
   align-items: center;
   font-size: 16px;
+}
+
+.footer__list-item:last-child {
+  margin-bottom: 0px;
 }
 
 .footer__column-heading {
@@ -464,11 +470,15 @@
   margin: 0px 0px;
 }
 
-.footer__column-link:hover {
-  color: #c1c1c1;
-  text-decoration: none;
+.footer__column-link {
+  color: #fff;
   font-size: 16px;
   line-height: 20px;
+  text-decoration: none;
+}
+
+.footer__column-link:hover {
+  color: #c1c1c1;
 }
 
 .footer__social-icon {
