@@ -389,7 +389,7 @@
   order: 2;
 }
 
-.about__paragraph: {
+.about__paragraph {
   display: flex;
   justify-content: center;
   margin: 0 0 32px;
