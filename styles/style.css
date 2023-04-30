@@ -389,13 +389,17 @@
   order: 2;
 }
 
-.about__paragraph {
+.about__paragraph: {
   display: flex;
   justify-content: center;
   margin: 0 0 32px;
   z-index: 0;
   position: relative;
   flex-direction: column;
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0px;
 }
 
 .about__circle {
